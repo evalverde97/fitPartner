@@ -1,0 +1,152 @@
+@import "_variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import "./mixins";
+*{
+    font-family: $fuente;
+    a{
+        text-decoration:none;
+    }
+}
+.navmenu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $White;
+    border-bottom: 9px solid $Secondary;
+}
+.nav_logo{
+    h1{
+        padding-left: 30px;
+        color: $Primary;
+    }
+}
+.menu{
+    li{
+        display: inline-block;
+        padding-right: 30px;
+    }
+}
+// MAIN
+.steps{
+    height: 250px;
+}
+.steps-flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center; 
+}
+.steps-icon{
+    width: 60px !important;
+    color: #161a1d;
+    height: 40px !important;
+}
+.cards{
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.centered{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    p{
+        margin: 15px;
+    }
+}
+//////  INDEX CARDS
+.cards_card{
+    height: 160px;
+    width: 200px;
+    border: 3px solid;
+    border-radius: 13px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+    background-position: center;
+    background-size: cover;
+    p{
+        display: flex;
+        color: white;
+        font-size: 25px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+}
+#alimentacion{
+    background-image: url(./assets/ensalada.jpg);
+}
+#entrenamiento{
+    background-image: url(./assets/ejercicio.jpg);
+}
+#faqs{
+    background-image: url(./assets/faqs.jpg);
+}
+///// BLOG
+.blog{
+    height: 200px;
+    display: none;
+}
+
+/////      FOOTER
+.footer{
+    color:  $Secondary;
+    background-color: $Primary;
+}
+#formCambioDeDatos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    input{
+        margin: 10px;
+    }
+}
+.login{
+    height: 600px;
+    @include center;
+    input{
+        margin: 10px;
+        border-radius: 10px;
+        height: 35px;
+        width: 300px;
+    }
+}
+#ss{
+    color: $Primary;
+    background-color: $Secondary;
+    font-weight: 600;
+}
+#pswchange{
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+#newaccount{
+    width:250px;
+    background-color: $DarkBlue;
+    color: $White;
+}
