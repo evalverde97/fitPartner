@@ -28,8 +28,10 @@
 }
 .nav_logo{
     h1{
-        padding-left: 30px;
-        color: $Primary;
+        a{
+            padding-left: 30px;
+            color: $Primary;
+        }
     }
 }
 .menu{

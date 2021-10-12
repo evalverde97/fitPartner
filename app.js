@@ -1,7 +1,7 @@
 const usersEnLs = localStorage.getItem('usuarios'); // array de usuarios en LS (formateado a JSON)
 const usuarios = JSON.parse(usersEnLs); // objeto parseado, lo tengo que usar en la f
-let loginEmail = document.getElementById('email').value;
-let loginPassword = document.getElementById('password').value;
+let loginEmail = document.querySelector('#email').value;
+let loginPassword = document.querySelector('#password').value;
 let loginSs = document.getElementById('ss');
 
 //================================================ validación de usuarios, guardado de sesión activa en LS
@@ -32,10 +32,18 @@ function iniciarSesion(){
         alert("Usuario no encontrado");
     }
 };
-let userActivoParse = JSON.parse(localStorage.getItem('userActivo'));
-
 // ============== Personalización de página de pefil para user 
 let bienvenida = document.getElementById("welcome");
-let h2 = document.createElement("h2");
-h2.innerHTML = `<h2> Hola ${userActivoParse}! </h2>`;
+let h2 = document.createElement('h2');
+const userActivoEnLs = localStorage.getItem('userActivo'); // array de usuarios en LS (formateado a JSON)
+const userActivoParseado = JSON.parse(userActivoEnLs);
+
+h2.innerHTML = `<h2> Hola ${userActivoParseado}! </h2>`;
 bienvenida.appendChild(h2);
+
+let fichaUser = document.getElementById('fichaUser');
+let div = document.createElement("div");
+div.innerHTML = ` 
+hola
+`;
+fichaUser.appendChild(div);

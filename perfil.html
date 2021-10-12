@@ -12,8 +12,8 @@
     <div class="navbar">
         <div class="nav_logo">
             <h1>
-                MyFitPartner
-            </h1>
+                <a href="index.html">MyFitPartner</a>
+             </h1>
         </div>
         <div class="nav_menu">
             <ul class="menu">
@@ -25,26 +25,13 @@
     </div>
     <!--     INFO DEL USER      -->
     <div id="welcome">
-        
+
     </div>
-    <!--    FORM PARA MODIFICAR DATOS       -->
-    <p>Modificar datos</p>
-    <form method="POST" autocomplete="off" id="formCambioDeDatos">
-        <p>Ficha Personal</p>
-        <label for="nombreApellido">Nombre y apellido</label>
-        <input type="text required" name="nombreApellido" id="" placeholder="Ingresa tu nombre y apellido">
-        <label for="edad">Edad</label>
-        <input type="text" name="edad" id="" placeholder="Ingresa tu edad">
-        <label for="imc">IMC</label>
-        <input type="range" name="imc" value="" min="1" max="4" step="1" list="tickmarks">
-        <datalist id="tickmarks">
-        <option value="1" label="Peso inferior al promedio">
-        <option value="2" label="Peso promedio">
-        <option value="3" label="Peso superior al promedio">
-        <option value="4" label="Obesidad">
-        </datalist>
-        <input type="submit">
-    </form>
-    <script src="./app.js"></script>
+    <div id="fichaUser">
+        <h3>Ficha personal</h3>
+    </div>
+    <button class="centered">Cerrar sesión</button>
+    <script src="user.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

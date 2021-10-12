@@ -27,7 +27,7 @@
   border-bottom: 9px solid #ffd60a;
 }
 
-.nav_logo h1 {
+.nav_logo h1 a {
   padding-left: 30px;
   color: #000814;
 }
