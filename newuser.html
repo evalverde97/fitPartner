@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav_logo">
+            <h1>
+                <a href="index.html">MyFitPartner</a>
+             </h1>
+        </div>
+        <div class="nav_menu">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html"><i class="far fa-user"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--  MAIN   -->
+    <div>
+        <form method="post" class="newUserForm">
+            <label for="formNombre">Nombre</label>
+            <input required type="text" id="formNombre" autocomplete="off" placeholder="Ingresa tu Nombre">
+            <label for="formApellido">Apellido</label>
+            <input required type="text" id="formApellido" autocomplete="off" placeholder="Ingresa tu Apellido">
+            <label for="formEmail">Correo</label>
+            <input required type="email" id="formEmail" autocomplete="off" placeholder="Ingresa tu E-mail">
+            <label for="formContraseña">Contraseña</label>
+            <input required type="password" id="formContraseña" autocomplete="off" placeholder="Ingresa tu contraseña">
+            <label for="formPeso">Peso (en Kg.)</label>
+            <input type="number" id="formPeso" autocomplete="off" placeholder="Ingresa tu peso">
+            <label for="formEdad">Edad</label>
+            <input type="number" id="formEdad" autocomplete="off" placeholder="Ingresa tu edad">
+            <label >Selecciona tu género</label>
+            <label for="gender-m"><input type="checkbox" name="gender-m" id="" value="M">Hombre</label>
+            <label for="gender-f"><input type="checkbox" name="gender-f" id="" value="F">Mujer</label>
+            <label for="target">Ojetivo físico</label>
+            <select name="target" id="formTarget">
+                <option value="ganar-peso">Ganar peso</option>
+                <option value="perder-peso">Perder peso</option>
+                <option value="tonificar">Tonificar</option>
+            </select>
+            <label for="formaFisica">Nivel de actividad física</label>
+            <select name="formaFisica" id="">
+                <option value="high">Intensa</option>
+                <option value="mid">Moderada</option>
+                <option value="low">Baja</option>
+            </select>
+            <input type="button" id="crearUser" value="Crear usuario">
+        </form>
+    </div>
+    <script src="user.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

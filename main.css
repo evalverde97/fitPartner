@@ -86,7 +86,7 @@
 }
 .cards_card p {
   display: flex;
-  color: white;
+  color: #000814;
   font-size: 25px;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -94,18 +94,6 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-}
-
-#alimentacion {
-  background-image: url(./assets/ensalada.jpg);
-}
-
-#entrenamiento {
-  background-image: url(./assets/ejercicio.jpg);
-}
-
-#faqs {
-  background-image: url(./assets/faqs.jpg);
 }
 
 .blog {
@@ -121,10 +109,10 @@
 #formCambioDeDatos {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 #formCambioDeDatos input {
   margin: 10px;
@@ -163,4 +151,13 @@
   width: 250px;
   background-color: #001d3d;
   color: #ffffff;
+}
+
+.newUserForm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
