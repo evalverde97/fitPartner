@@ -7,7 +7,7 @@
     <title>Perfil</title>
     <link rel="stylesheet" href="main.css">
     <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-    <script defer src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="navbar">
@@ -20,7 +20,7 @@
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html"><i class="far fa-user"></i></a></li>
+                <button class="button-nodisplay" id="loginIcon"><i class="far fa-user"></i></button>
             </ul>
         </div>
     </div>
@@ -35,8 +35,11 @@
             <input required type="email" id="formEmail" autocomplete="off" placeholder="Ingresa tu E-mail">
             <label for="formContraseña">Contraseña</label>
             <input required type="password" id="formContraseña" autocomplete="off" placeholder="Ingresa tu contraseña">
+            <small id="error-nombre" >La contraseña debe contener al menos 8 caracteres</small>
             <label for="formPeso">Peso (en Kg.)</label>
             <input type="number" id="formPeso" autocomplete="off" placeholder="Ingresa tu peso">
+            <label for="formHeight">Altura (en mts)</label>
+            <input type="number" id="formHeight" autocomplete="off" placeholder="Ingresa tu altura">
             <label for="formEdad">Edad</label>
             <input type="number" id="formEdad" autocomplete="off" placeholder="Ingresa tu edad">
             <label >Selecciona tu género</label>
@@ -54,10 +57,22 @@
                 <option value="mid">Moderada</option>
                 <option value="low">Baja</option>
             </select>
-            <input type="button" id="crearUser" value="Crear usuario">
+            <button id="crearCuentaNueva"> Crear Cuenta Nueva</button>
         </form>
     </div>
-    <script src="user.js"></script>
+    <!--   MODALES    -->
+    <div class="modal-container">
+        <div>
+            <form class="login">
+                <button class="button-nodisplay" id="cerrarLogin"><i class="far fa-times-circle"></i></button>
+                <input type="email" id="email" placeholder="Correo Electrónico" autocomplete="off">
+                <input type="password"  id="password" placeholder="Contraseña" autocomplete="current-password">
+                <input type="button" id="ss" value="Iniciar Sesión">
+                <input type="button"  id="pswchange" value="¿Olvidaste tu contraseña?">
+                <input type="button" id="newaccount" value="Crear Cuenta Nueva" href="newuser.html">
+            <form>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-    <script defer src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>proyecto final</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
             <ul class="menu">
                 <li>Inicio</li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html"><i class="far fa-user"></i></a></li>
+                <button class="button-nodisplay" id="loginIcon"><i class="far fa-user"></i></button>
             </ul>
         </div>
     </div>
@@ -69,8 +69,19 @@
         </div>
     </footer>
     <!--   MODALES    -->
-    <div></div>
-    <script src="user.js"></script>
+    <div class="modal-container">
+        <div>
+            <form class="login">
+                <button class="button-nodisplay" id="cerrarLogin"><i class="far fa-times-circle"></i></button>
+                <input type="email" id="email" placeholder="Correo Electrónico" autocomplete="off">
+                <input type="password"  id="password" placeholder="Contraseña" autocomplete="current-password">
+                <input type="button" id="ss" value="Iniciar Sesión">
+                <input type="button"  id="pswchange" value="¿Olvidaste tu contraseña?">
+                <input type="button" id="newaccount" value="Crear Cuenta Nueva" href="newuser.html">
+            <form>
+        </div>
+    </div>
+    <!-- SCRIPTS JS -->
     <script src="app.js"></script>
 </body>
 </html>
