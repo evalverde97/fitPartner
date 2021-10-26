@@ -101,12 +101,13 @@ crearCuenta.onclick = () =>{
     window.location.href = 'newuser.html'
 };
 // crear usuario nuevo
-let crearUser = document.getElementById('crearCuentaNueva');
+/*let crearUser = document.getElementById('crearCuentaNueva');
 crearUser.addEventListener('click', ()=>{
     let NUser = new User(NUname.value,NUemail.value, NUpassword.value, NUweight.value, NUheight.value, NUage.value);
     users.push(NUser);
     window.location.href = 'perfil.html';
  });
+ */
 // info para los datos al momento de crear un user
 
 let errorNombre = document.getElementById('error-nombre');
